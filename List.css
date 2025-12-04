@@ -1,0 +1,84 @@
+body {
+    background-color: #85bfc7;
+}
+
+#create {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+    margin: 2px 250px;
+    cursor: pointer;
+    border-radius: 12px;
+    
+}
+
+#Delete {
+    
+    background-color: white; 
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 55px;
+    margin-left:30px;
+    margin-top: 20px;
+    margin-bottom : 30px;
+    cursor: pointer;
+    border: 2px solid #ff000a;
+}
+
+.head{
+    font-size : 50px;
+    color: white;
+    background-color: red;
+    width: 45%;
+    text-align : center;
+}
+
+.foot {
+    background-color : #00ffab;
+    margin-top : 300px;
+}
+
+#List_1 , #List_2 , #List_3 , #List_4 , #List_5 , #List_6 , #List_7 , #List_8 , #List_9 , #List_10{
+    display : none;
+}
+
+#List_11 , #List_12 , #List_13 , #List_14 , #List_15 , #List_16 , #List_17 , #List_18 , #List_19 , #List_20 {
+    display : none;
+}
+
+#List_21 , #List_22 , #List_23 , #List_24 , #List_25 , #List_26 , #List_27 , #List_28 , #List_29 , #List_30 {
+    display : none;
+}
+
+.headOfList {
+    font-size : 55px;
+    background-color : #565656;
+    margin-top : 0;
+    margin-left : 0;
+    padding : 25px 0;
+    width : 812px;
+    color : white;
+    padding-left : 20px;
+    text-align : left;
+}
+
+div.List {
+    display:inline-block;
+    margin:65px;
+    text-align : center;
+    border:1px solid black;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -ms-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
