@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Notepad</title>
+    <link rel="stylesheet" href="List.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-content">
+            <button class="btn-icon mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
+                <i class="fas fa-bars"></i>
+            </button>
+            <h1 class="logo">
+                <i class="fas fa-sticky-note"></i>
+                Modern Notepad
+            </h1>
+            <button class="btn-primary" id="createBtn">
+                <i class="fas fa-plus"></i>
+                <span>New Notepad</span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+    <!-- Sidebar Backdrop (Mobile) -->
+    <div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+
+    <!-- Saved Notepads Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <h2><i class="fas fa-book"></i> Saved Notepads</h2>
+            <button class="btn-icon" id="closeSidebar" aria-label="Close sidebar" title="Close sidebar">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="sidebar-content" id="savedNotepads">
+            <p class="empty-message">No saved notepads yet</p>
+        </div>
+        <div class="sidebar-footer">
+            <button class="btn-close-sidebar" id="closeSidebarBottom">
+                <i class="fas fa-times-circle"></i>
+                <span>Close</span>
+            </button>
+        </div>
+    </aside>
+
+        <!-- Notepads Grid -->
+        <div class="notepads-grid" id="notepadsGrid">
+            <div class="welcome-message" id="welcomeMessage">
+                <i class="fas fa-lightbulb"></i>
+                <h2>Welcome to Modern Notepad!</h2>
+                <p>Click "New Notepad" to create your first notepad</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal for Naming Notepad -->
+    <div class="modal" id="nameModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Name Your Notepad</h3>
+                <button class="btn-icon" id="closeModal">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <input type="text" id="notepadName" placeholder="Enter notepad name..." maxlength="50" autofocus>
+                <div class="modal-actions">
+                    <button class="btn-secondary" id="cancelBtn">Cancel</button>
+                    <button class="btn-primary" id="saveNameBtn">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div class="toast" id="toast">
+        <span id="toastMessage"></span>
+    </div>
+
+    <script src="List.js"></script>
+</body>
+</html>
